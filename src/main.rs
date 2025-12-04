@@ -1,3 +1,4 @@
+mod day01;
 mod puzzle;
 
 macro_rules! day_impl {
@@ -37,7 +38,7 @@ fn main() -> Result<()> {
         .parse::<u32>()?;
 
     match day {
-        1 => todo!(),
+        1 => day01(),
         2 => todo!(),
         3 => todo!(),
         4 => todo!(),
@@ -52,3 +53,5 @@ fn main() -> Result<()> {
         _ => Err("invalid day".into()),
     }
 }
+
+day_fun!(day01, One, Two);
