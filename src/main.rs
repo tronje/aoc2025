@@ -1,0 +1,54 @@
+mod puzzle;
+
+macro_rules! day_impl {
+    ($mod:ident, $one:ident, $two:ident) => {
+        let mut one = $mod::$one;
+        println!("part one: {}", one.solution()?);
+
+        let mut two = $mod::$two;
+        println!("part two: {}", two.solution()?);
+    };
+}
+
+macro_rules! day_fun {
+    ($name:ident, $one:ident, $two:ident) => {
+        fn $name() -> Result<()> {
+            day_impl!($name, $one, $two);
+            Ok(())
+        }
+    };
+}
+
+pub type Error = Box<dyn std::error::Error>;
+pub type Result<T> = std::result::Result<T, Error>;
+pub use puzzle::Puzzle;
+
+pub mod prelude {
+    pub use super::Result;
+    pub use crate::puzzle::Puzzle;
+    pub use std::fs::File;
+    pub use std::io::BufRead;
+}
+
+fn main() -> Result<()> {
+    let day = std::env::args()
+        .nth(1)
+        .ok_or("specify a day!")?
+        .parse::<u32>()?;
+
+    match day {
+        1 => todo!(),
+        2 => todo!(),
+        3 => todo!(),
+        4 => todo!(),
+        5 => todo!(),
+        6 => todo!(),
+        7 => todo!(),
+        8 => todo!(),
+        9 => todo!(),
+        10 => todo!(),
+        11 => todo!(),
+        12 => todo!(),
+        _ => Err("invalid day".into()),
+    }
+}
