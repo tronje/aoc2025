@@ -1,6 +1,7 @@
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 mod puzzle;
 
 macro_rules! day_impl {
@@ -43,7 +44,7 @@ fn main() -> Result<()> {
         1 => day01(),
         2 => day02(),
         3 => day03(),
-        4 => todo!(),
+        4 => day04(),
         5 => todo!(),
         6 => todo!(),
         7 => todo!(),
@@ -59,3 +60,4 @@ fn main() -> Result<()> {
 day_fun!(day01, One, Two);
 day_fun!(day02, One, Two);
 day_fun!(day03, One, Two);
+day_fun!(day04, One, Two);
