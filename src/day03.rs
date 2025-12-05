@@ -145,14 +145,14 @@ mod tests {
     use super::*;
 
     #[test]
-    fn a() -> Result<()> {
-        let mut a = One;
-        a.test_example()
+    fn one() -> Result<()> {
+        let mut one = One;
+        one.test_example()
     }
 
     #[test]
-    fn b() -> Result<()> {
-        let mut b = Two;
-        b.test_example()
+    fn two() -> Result<()> {
+        let mut two = Two;
+        two.test_example()
     }
 }
