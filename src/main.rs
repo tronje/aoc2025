@@ -2,6 +2,7 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
 mod day06;
 mod puzzle;
 
@@ -46,7 +47,7 @@ fn main() -> Result<()> {
         2 => day02(),
         3 => day03(),
         4 => day04(),
-        5 => todo!(),
+        5 => day05(),
         6 => day06(),
         7 => todo!(),
         8 => todo!(),
@@ -62,4 +63,5 @@ day_fun!(day01, One, Two);
 day_fun!(day02, One, Two);
 day_fun!(day03, One, Two);
 day_fun!(day04, One, Two);
+day_fun!(day05, One, Two);
 day_fun!(day06, One, Two);
