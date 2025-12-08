@@ -1,6 +1,5 @@
 use crate::prelude::*;
 use std::collections::HashSet;
-use std::io::BufReader;
 use std::ops::RangeInclusive;
 
 pub struct Database {

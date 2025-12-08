@@ -1,5 +1,4 @@
 use crate::prelude::*;
-use std::io::BufReader;
 
 fn surrounding_indices(x: usize, y: usize) -> [(usize, usize); 8] {
     [

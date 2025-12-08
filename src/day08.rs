@@ -1,7 +1,6 @@
 use crate::prelude::*;
 use std::collections::HashSet;
 use std::hash::Hash;
-use std::io::BufReader;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Point {

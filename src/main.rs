@@ -38,7 +38,7 @@ pub mod prelude {
     pub use super::Result;
     pub use crate::puzzle::Puzzle;
     pub use std::fs::File;
-    pub use std::io::BufRead;
+    pub use std::io::{BufRead, BufReader};
 }
 
 fn main() -> Result<()> {
