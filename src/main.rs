@@ -10,10 +10,14 @@ mod puzzle;
 macro_rules! day_impl {
     ($mod:ident, $one:ident, $two:ident) => {
         let mut one = $mod::$one;
-        println!("part one: {}", one.solution()?);
+        let start = std::time::Instant::now();
+        let solution = one.solution()?;
+        println!("part one: {solution} (took {:?})", start.elapsed());
 
         let mut two = $mod::$two;
-        println!("part two: {}", two.solution()?);
+        let start = std::time::Instant::now();
+        let solution = two.solution()?;
+        println!("part two: {solution} (took {:?})", start.elapsed());
     };
 }
 
