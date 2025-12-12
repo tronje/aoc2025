@@ -7,7 +7,9 @@ mod day06;
 mod day07;
 mod day08;
 mod day09;
+mod day10;
 mod puzzle;
+mod util;
 
 macro_rules! day_impl {
     ($mod:ident, $one:ident, $two:ident) => {
@@ -59,7 +61,7 @@ fn main() -> Result<()> {
         7 => day07(),
         8 => day08(),
         9 => day09(),
-        10 => todo!(),
+        10 => day10(),
         11 => todo!(),
         12 => todo!(),
         _ => Err("invalid day".into()),
@@ -75,3 +77,4 @@ day_fun!(day06, One, Two);
 day_fun!(day07, One, Two);
 day_fun!(day08, One, Two);
 day_fun!(day09, One, Two);
+day_fun!(day10, One, Two);
